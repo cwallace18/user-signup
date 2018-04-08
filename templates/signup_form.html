@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<style>
+    p {
+        color: black
+    }
+</style>
+    <body>
+        <h1><strong>Signup</strong></h1>
+        <form method="POST">
+            <label for="username">Username
+                <input id="username" name="username" value="{{username}}"><p> {{username_error}}</p>
+            </label><br>
+            <label for="password">Password
+                <input id="password" type="password" name="password"><p> {{password_error}}</p>
+            </label><br>
+            <label for="verify-password">Verify Password
+                <input id="verify-password" type="password" name="verify_password"><p> {{verify_error}}</p>
+            </label><br>
+            <label for="email-address">Email (optional)
+                <input id="email-address" type="text" name="email"><p> {{email_error}}</p>
+            </label><br>
+            <input type="submit">
